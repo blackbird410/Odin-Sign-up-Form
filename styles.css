@@ -56,7 +56,6 @@ a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #f0ebeb;
     margin: 0;
 
     min-width: 420px;
@@ -72,6 +71,7 @@ a:hover {
 .welcome > h3 {
     font-family: 'Satisfy', cursive;
     font-size: 1.3em;
+    padding-left: 16px;
 }
 
 form {
@@ -102,7 +102,8 @@ fieldset {
     flex-direction: column;
     width: 220px;
     height: 50px;
-    border: solid #05e30c 2px;
+    border-bottom: solid #05e30c 1.5px;
+    border-radius: 12px;
     margin: 12px;
     padding: 4px;
 }
@@ -131,18 +132,20 @@ input:focus {
 }
 
 button {
-    width: 150px;
-    height: 50px;
-    border-radius: 24px;
+    width: 180px;
+    height: 60px;
+    border-radius: 12px;
     background-color: #376608;
     color: #FFF;
     font-weight: bold;
     font-size: 16px;
-    margin-left: 24px;
+    margin-left: 18px;
+    box-shadow: 10px 5px 8px black;
 }
 
 button:hover {
     background-color: #8a6303;
+    box-shadow: 10px -5px 8px grey;
 }
 
 span {
@@ -151,6 +154,36 @@ span {
 
 .invalid {
     border-color: red;
+}
+
+.cover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    z-index: 2;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./neom.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+    box-shadow: 15px 10px 12px black;
+    visibility: hidden;
+    transition: 4s;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.message {
+    font-size: 2.5em;
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    width: 70%;
 }
 
 @media only screen and (max-width: 600px)
@@ -175,5 +208,9 @@ span {
     .submit {
         align-items: center;
         margin: 0;
+    }
+
+    .message {
+        font-size: 1.2em;
     }
 }
