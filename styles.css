@@ -1,0 +1,166 @@
+* {
+    font-family: 'Source Sans Pro', Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    width: max(45%, 420px);
+    min-width: 420px;
+    min-height: 80vh;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+}
+
+.logo-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    text-align: center;
+    box-shadow: 15px 8px 8px black;
+}
+
+h1 {
+    font-family: 'Nanum Gothic', sans-serif, 'Great Vibes', cursive;
+    font-size: 50px;
+}
+
+.img-credit a {
+    color: #077034
+}
+
+a {
+    text-decoration: none;
+    color: #04AB4E;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #fcba03;
+}
+
+.second {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #f0ebeb;
+    margin: 0;
+
+    min-width: 420px;
+}
+
+.welcome {
+    width: min(80%, 600px);
+    text-align: justify;
+    color: #4a3701;
+    padding: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    background-color: white;
+    margin-bottom: 16px;
+    box-shadow: 12px 5px 5px grey;
+}
+
+.row-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: min(95%, 600px);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 50px;
+    border: solid #05e30c 2px;
+    margin: 12px;
+    padding: 4px;
+}
+
+label {
+    font-size: small;
+    font-weight: bold;
+    color: #8a6303;
+}
+
+input {
+    border: none;
+    height: 40px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 16px;
+    margin-left: 16px;
+}
+
+button {
+    width: 150px;
+    height: 50px;
+    border-radius: 24px;
+    background-color: #376608;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 16px;
+    margin-left: 24px;
+}
+
+button:hover {
+    background-color: #8a6303;
+}
+
+
+@media only screen and (max-width: 600px)
+{
+    body {
+        flex-direction: column;
+    }
+
+    .first {
+        width: 100%;
+        height: 100%;
+    }
+
+    fieldset {
+        width: 100%;
+    }
+
+    .row-container {
+        justify-content: center;
+    }
+
+    .submit {
+        align-items: center;
+        margin: 0;
+    }
+}

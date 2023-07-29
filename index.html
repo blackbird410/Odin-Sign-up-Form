@@ -3,10 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Nanum+Gothic&family=Satisfy&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Form Webpage</title>
 </head>
 <body>
-    
+    <div class="container first">
+        <div class="logo-container">
+            <h1>ARCANE</h1>
+        </div>
+        <div class="img-credit">
+            <p>
+                Photo by 
+                <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">
+                    Halie West</a> on <a href="https://unsplash.com/@haliewestphoto?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+        </div>
+    </div>
+    <div class="container second">
+        <div class="welcome">
+            <h3>
+                Have you ever wanted to find a place of your own? A place where all your worries would just vanish? You've found it.<br><br>
+                Welcome to Arcane, where all dreams come true!
+            </h3>
+        </div>
+        <form action="" method="post">
+            <fieldset>
+                <h3>Sign Up Now!</h3>
+                <div class="row-container">
+                    <div class="form-container">
+                        <label for="first-name">First Name</label>
+                        <span class="feedback"></span>
+                        <input type="text" id="first-name" name="user_fname" placeholder="Luke" pattern="^[a-zA-Z]{3, 20}$" required>
+                    </div>
+                    <div class="form-container">
+                        <label for="last-name">Last Name</label>
+                        <span class="feedback"></span>
+                        <input type="text" id="last-name" name="user_lname" placeholder="Skywalker" pattern="^[a-zA-Z]{3, 20}$" required>
+                    </div>
+                </div>
+                <div class="row-container">
+                    <div class="form-container">
+                        <label for="email">Email</label>
+                        <span class="feedback"></span>
+                        <input type="email" id="email" name="user_mail" placeholder="anakin14@gmail.com" required>
+                    </div>
+                    <div class="form-container">
+                        <label for="telephone">Phone Number</label>
+                        <span class="feedback"></span>
+                        <input type="text" name="user_phone" id="telephone" placeholder="+13574789685" pattern="^(+\d{1,3})?\d{8,10}$">
+                    </div>
+                </div>
+                <div class="row-container">
+                    <div class="form-container">
+                        <label for="password">Password</label>
+                        <span class="feedback"></span>
+                        <input type="password" name="user_password" id="password" placeholder="StarWars11" pattern="^[a-zA-Z0-9]{8,20}$" required>
+                    </div>
+                    <div class="form-container">
+                        <label for="confirm_pass">Confirm Password</label>
+                        <input type="password" name="confirm_password" id="confirm_pass" placeholder="StarWars11" pattern="^[a-zA-Z0-9]{8,20}$" required>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="submit">
+                <button type="submit" value="submit">Create Account</button>
+                <p>Already have an account? <a href="">Log in</a></p>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
