@@ -23,6 +23,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     color: #FFF;
+    box-shadow: 10px 10px 25px #8a6303;
 }
 
 .logo-container {
@@ -62,10 +63,15 @@ a:hover {
 }
 
 .welcome {
-    width: min(80%, 600px);
+    width: min(80%, 580px);
     text-align: justify;
     color: #4a3701;
     padding: 16px;
+}
+
+.welcome > h3 {
+    font-family: 'Satisfy', cursive;
+    font-size: 1.3em;
 }
 
 form {
@@ -139,6 +145,13 @@ button:hover {
     background-color: #8a6303;
 }
 
+span {
+    color: red;
+}
+
+.invalid {
+    border-color: red;
+}
 
 @media only screen and (max-width: 600px)
 {
