@@ -57,8 +57,19 @@ a:hover {
     flex-direction: column;
     justify-content: space-around;
     margin: 0;
-
     min-width: 420px;
+    animation: opening 3s cubic-bezier(0.19, 1, 0.22, 1) 0.5s 1;
+}
+
+@keyframes opening {
+    0% {
+        transform: scale(0, 0);
+        opacity: 0.4;
+    }
+    100% {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
 }
 
 .welcome {
