@@ -1,4 +1,3 @@
-const body = document.body;
 const form = document.querySelector("form");
 const fName = document.getElementById('first-name');
 const lName = document.getElementById('last-name');
@@ -29,24 +28,6 @@ const imgCredit = document.createElement('div');
 const link1 = document.createElement('a');
 const link2 = document.createElement('a');
 
-// ------------------ Defining a thanks cover------------------------
-
-cover.className = 'cover';
-message.className = 'message';
-imgCredit.className = 'img-credit';
-link1.href = "https://unsplash.com/@neom?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText";
-link2.href = "https://unsplash.com/photos/bhKqZNZeAR0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText";
-link1.textContent = " NEOM on";
-link2.textContent = " Unsplash";
-
-message.textContent = "Thank You for Signing Up! Let the adventure begin!";
-imgCredit.textContent = "Photo by";
-imgCredit.appendChild(link1);
-imgCredit.appendChild(link2);
-cover.appendChild(message);
-cover.appendChild(imgCredit);
-body.appendChild(cover);
-// --------------------------------------------------------------------------------------------
 
 fName.addEventListener('input', () => {
     if (fName.value.match(reName)) {
@@ -121,6 +102,7 @@ form.addEventListener("submit", (event) => {
         }
         else {
             elt.parentElement.classList.add('invalid');
+            b = false;
             event.preventDefault();
         }
     });
@@ -130,7 +112,25 @@ form.addEventListener("submit", (event) => {
     if (!b) {
         event.preventDefault();
     }
-    else {
-        cover.classList.add('visible');
-    }
 });
+
+// // ------------------ Defining a thanks cover------------------------
+// const body = document.querySelector('.first');
+// cover.className = 'cover';
+// message.className = 'message';
+// imgCredit.className = 'img-credit';
+// link1.href = "https://unsplash.com/@neom?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText";
+// link2.href = "https://unsplash.com/photos/bhKqZNZeAR0?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText";
+// link1.textContent = " NEOM on";
+// link2.textContent = " Unsplash";
+
+// message.textContent = "Thank You for Signing Up! Let the adventure begin!";
+// imgCredit.textContent = "Photo by";
+// imgCredit.appendChild(link1);
+// imgCredit.appendChild(link2);
+// cover.appendChild(message);
+// cover.appendChild(imgCredit);
+// body.appendChild(cover);
+
+// *ERROR : Transition failed after form submission
+// // --------------------------------------------------------------------------------------------
