@@ -119,6 +119,10 @@ fieldset {
     padding: 4px;
 }
 
+.form-container:hover {
+    transform: scale(1.1);
+}
+
 label {
     font-size: small;
     font-weight: bold;
@@ -146,7 +150,7 @@ button {
     width: 180px;
     height: 60px;
     border-radius: 12px;
-    background-color: #376608;
+    background-color: #417909;
     color: #FFF;
     font-weight: bold;
     font-size: 16px;
@@ -157,6 +161,7 @@ button {
 button:hover {
     background-color: #8a6303;
     box-shadow: 10px -5px 8px grey;
+    transform: scale(1.05);
 }
 
 span {
